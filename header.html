@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Company Name -->
+		<title>Web UiExpert || SAYMON AREFIN AKASH</title>
+		
+		<!-- Company Icon -->
+		<link rel="icon" href="images/logo.png">
+		
+		<!-- Google Font  -->
+		
+		<!-- Fontawesome Sheet -->
+		<link rel="stylesheet" href="css/all.css">
+		<!-- WoW CSS -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- Owl Carousel Sheet -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- Tailwind-Css -->
+		<link rel="stylesheet" href="css/tailwind.min.css">
+		
+	</head>
+	<body>
+		<!-- ==Header Section == -->
+		<header class="absolute right-0 top-0 left-0" x-data="{humberger: false}">
+			<nav class="relative z-50" x-show="humberger"
+				@click.away="humberger = false"
+				x-transition:enter="transition ease-out duration-300 -ml-64"
+				x-transition:enter-start=""
+				x-transition:enter-end=" transform translate-x-64"
+				x-transition:leave="transition ease-out duration-300"
+				x-transition:leave-start=""
+				x-transition:leave-end="transform -translate-x-64"
+			>
+				<div class="fixed top-0 left-0 bg-white shadow-2xl w-72 h-screen uppercase">
+					<div class=" absolute top-6 left-60">
+						<span @click="humberger=false"><i class="far fa-times-circle fa-2x text-red-400 hover:text-red-500 "></i></span>
+					</div>
+					<div class=" border-b py-5 pl-7 mb-4">
+						<a class="text-yellow-500 text-4xl font-bold" href="#">Ak<span class="text-gray-500">ash</span></a>
+					</div>
+					<div class="space-x-6 text-xs font-semibold w-full" x-data=" {active :'active1'}">
+						<ul class="w-full tracking-wider">
+							<li class="hover:text-yellow-500 duration-300 hover:shadow border-b py-4 px-10">
+								<a href="#"
+								@click.prevent=" active='active1'"
+								:class="{'text-yellow-500': active==='active1'}"
+								>HOME</a>
+							</li>
+							<li class="hover:text-yellow-500 duration-300 hover:tracking-widest hover:shadow border-b py-4 px-10">
+								<a href="#"
+								@click.prevent=" active='active2'"
+								:class="{'text-yellow-500': active==='active2'}"
+								>PORTFOLIO</a>
+							</li>
+							<li class="hover:text-yellow-500 duration-300 hover:tracking-widest hover:shadow border-b py-4 px-10">
+								<a href="#"
+								@click.prevent=" active='active3'"
+								:class="{'text-yellow-500': active==='active3'}"
+								>ABOUT</a>
+							</li>
+							<li class="hover:text-yellow-500 duration-300 hover:tracking-widest hover:shadow border-b py-4 px-10">
+								<a href="#"
+								@click.prevent=" active='active4'"
+								:class="{'text-yellow-500': active==='active4'}"
+								>BLOG</a>
+							</li>
+							<li class="hover:text-yellow-500 duration-300 hover:tracking-widest hover:shadow border-b py-4 px-10">
+								<a href="#"
+								@click.prevent=" active='active5'"
+								:class="{'text-yellow-500': active==='active5'}"
+								>CONTACT</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<nav class="mx-auto container uppercase py-5 flex lg:justify-around justify-between sm:px-0 px-5 items-center text-center text-white">
+				<div class=" flex md:hidden">
+					<button  @click="humberger=true">
+						<img class="h-10 w-10" src="images/menu.svg" alt="">
+					</button>
+				</div>
+				<div>
+					<a class="text-yellow-500 sm:text-4xl text-3xl font-bold md:ml-0 ml-10" href="#">Ak<span class="text-gray-500">ash</span></a>
+				</div>
+				<div class="flex space-x-6 text-xs" x-data=" {active :'active1'}">
+					<ul class="space-x-6 md:flex hidden tracking-wider">
+						<li class="hover:text-yellow-500">
+							<a class="text-gray-500" href="#"
+							@click.prevent=" active='active1'"
+							:class="{'text-yellow-500': active==='active1'}"
+							>Home</a>
+						</li>
+						<li class="hover:text-yellow-500">
+							<a class="text-gray-500" href="#"
+							@click.prevent=" active='active2'"
+							:class="{'text-yellow-500': active==='active2'}"
+							>PORTFOLIO</a>
+						</li>
+						<li class="hover:text-yellow-500">
+							<a class="text-gray-500" href="#"
+							@click.prevent=" active='active3'"
+							:class="{'text-yellow-500': active==='active3'}"
+							>ABOUT</a>
+						</li>
+						<li class="hover:text-yellow-500">
+							<a class="text-gray-500" href="#"
+							@click.prevent=" active='active4'"
+							:class="{'text-yellow-500': active==='active4'}"
+							>BLOG</a>
+						</li>
+						<li class="hover:text-yellow-500">
+							<a class="text-gray-500" href="#"
+							@click.prevent=" active='active5'"
+							:class="{'text-yellow-500': active==='active5'}"
+							>CONTACT</a>
+						</li>
+					</ul>
+					<div>
+						<a class="sm:px-9 px-7 py-3 bg-yellow-500 text-white rounded-full hover:shadow-2xl whitespace-nowrap" href="#">LOG IN</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- == Slider Section == -->
+			<section class="xl:px-28 md:px-20 sm:px-10 px-5">
+				<div class=" grid md:grid-cols-2 h-screen pt-32">
+					<div class=" flex justify-center self-center md:order-1 order-2">
+						<div class=" lg:w-4/6 text-left">
+							<h3 class=" text-5xl pb-3 tracking-wide sm:leading-snug">Provide You best Best Ui Service</h3>
+							<h5 class="text-gray-500 block text-xs tracking-wide pr-10">Mobile App Design and Development Studio. You can hire us</h5>
+							<div class="mt-10">
+								<a class="px-4 py-3 bg-indigo-600 text-white rounded-full hover:shadow-2xl" href="#"><img class=" inline-block w-4 mr-3" src="images/waving-hand.svg" alt="">Wave Me</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center self-center lg:pt-0 sm:pt-28 md:order-2 order-1 pb-10 md:pb-16">
+						<img class="" src="images/img-1.png" alt="">
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- ==Footer Section == -->
+		<footer>
+		
+		</footer>
+		
+		<!--  Alpine Js -->
+		<script src="js/alpine.min.js" defer></script>
+		<!--  jQuery and Bootstrap Bundle (includes Popper) -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<!--  WoW Js -->
+		<script src="js/wow.min.js"></script>
+		<!--  Counter Js -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<!--  Owl Carousel Js --><!--  Owl Carousel Js -->
+		<script src="js/owl.carousel.min.js"></script>
+	</body>
+	
+</html>
+
+
+
+
+
+
+

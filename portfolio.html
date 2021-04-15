@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Company Name -->
+		<title>Web UiExpert || SAYMON AREFIN AKASH</title>
+		
+		<!-- Company Icon -->
+		<link rel="icon" href="images/logo.png">
+		
+		<!-- Google Font  -->
+		
+		<!-- WoW CSS -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- Owl Carousel Sheet -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- Tailwind-Css -->
+		<link rel="stylesheet" href="css/tailwind.min.css">
+		<style>
+			ul li a:after{
+				content: "";
+				height: 1px;
+				width: 0px;
+				left: 0;
+				bottom: -5px;
+				position: absolute;
+				background: rgba(79,70,229);
+				transition-duration: .4s;
+			}
+			ul li a:hover::after,ul li a:focus::after,ul li a:active::after,.active::after{
+				width: 100% !important;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- ==Header Section == -->
+		<header>
+  
+		</header>
+		<main>
+			<!-- == Portfolio Section == -->
+			<section>
+				<div x-data="{ tab:'tab1'}" class=" grid sm:grid-cols-3 lg:gap-20 md:gap-10 gap-5 xl:px-40 md:px-20 sm:px-10 px-4 py-10">
+					<!-- == 001 == -->
+					<div class="sm:col-span-1">
+						<!-- == Hero text == -->
+						<div class=" text-center sm:text-left">
+							<h3 class="font-semibold text-3xl leading-snug tracking-wide py-1">Our portfolio</h3>
+							<p class=" text-sm font-light text-gray-500 leading-snug">View our portfolio in catagoris</p>
+						</div>
+						<div class="mt-5">
+							<ul>
+								<li class=" relative pt-6">
+									<a @click.prevent="tab='tab1'":class="{'text-indigo-600 active': tab==='tab1'}" class="text-gray-500 pb-1 hover:text-indigo-600 text-sm" href="#">All Works</a>
+								</li>
+								<li class=" relative pt-6">
+									<a @click.prevent="tab='tab2'":class="{'text-indigo-600 active': tab==='tab2'}" class="text-gray-500 pb-1 hover:text-indigo-600 text-sm" href="#">Minimal Design</a>
+								</li>
+								<li class=" relative pt-6">
+									<a  @click.prevent="tab='tab3'":class="{'text-indigo-600 active': tab==='tab3'}" class="text-gray-500 pb-1 hover:text-indigo-600 text-sm" href="#">Colorful Design</a>
+								</li>
+								<li class=" relative pt-6">
+									<a  @click.prevent="tab='tab4'":class="{'text-indigo-600 active': tab==='tab4'}" class="text-gray-500 pb-1 hover:text-indigo-600 text-sm" href="#">Landing Page Design</a>
+								</li>
+								<li class=" relative pt-6">
+									<a  @click.prevent="tab='tab5'":class="{'text-indigo-600 active': tab==='tab5'}" class="text-gray-500 pb-1 hover:text-indigo-600 text-sm" href="#">Mobile Apps Design</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- == 002 == -->
+					<div x-show=" tab==='tab1'" id="portfolio-owl-carousel" class="sm:col-span-2 owl-carousel owl-theme">
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5">
+							<div>
+								<img class="shadow-2xl" src="images/1.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/2.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/3.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/4.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/5.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/6.png" alt="">
+							</div>
+						</div>
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5 active">
+							<div>
+								<img class=" shadow-2xl" src="images/1.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/2.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/3.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/4.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/5.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/6.png" alt="">
+							</div>
+						</div>
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5">
+							<div>
+								<img class=" shadow-2xl" src="images/1.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/2.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/3.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/4.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/5.png" alt="">
+							</div>
+							<div>
+								<img class=" shadow-2xl" src="images/6.png" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- == 003 == -->
+					<div x-show=" tab==='tab2'"
+					
+					transition:enter="transition ease-out duration-300"
+					class="sm:col-span-2">
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5">
+							<div>
+								<img class="shadow-2xl" src="images/1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- == 004 == -->
+					<div x-show=" tab==='tab3'"class="sm:col-span-2">
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5">
+							<div>
+								<img class="shadow-2xl" src="images/5.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/2.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/6.png" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- == 005 == -->
+					<div x-show=" tab==='tab4'"class="sm:col-span-2">
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5">
+							<div>
+								<img class="shadow-2xl" src="images/6.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/2.png" alt="">
+							</div>
+							<div>
+								<img class="shadow-2xl" src="images/5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- == 006 == -->
+					<div x-show=" tab==='tab5'"class="sm:col-span-2">
+						<div class=" grid md:grid-cols-3 grid-cols-2 gap-5">
+							<div>
+								<img class="shadow-2xl" src="images/3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- ==Footer Section == -->
+		<footer>
+			<a href="https://www.youtube.com/" target="_blank">
+				<iframe class="h-1/2-screen w-full" src="https://www.youtube.com/" frameborder="0"></iframe>
+			</a>
+		</footer>
+		
+		<!--  Alpine Js -->
+		<script src="js/alpine.min.js" defer></script>
+		<!--  jQuery and Bootstrap Bundle (includes Popper) -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<!--  WoW Js -->
+		<script src="js/wow.min.js"></script>
+		<!--  Counter Js -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<!--  Owl Carousel Js --><!--  Owl Carousel Js -->
+		<script src="js/owl.carousel.min.js"></script>
+		<script>
+			var owl = $('#portfolio-owl-carousel');
+				owl.owlCarousel({
+					items:1,
+					loop:true,
+					dot:true,
+					autoplay:true,
+					autoplayTimeout:3500,
+					autoplayHoverPause:true,
+					responsiveClass:true,
+					responsive:{
+						0:{
+							items:1,
+						},
+						576:{
+							items:1,
+						},
+						992:{
+							items:1,
+						}
+					}
+				});
+		</script>
+	</body>
+	
+</html>
+
+
+
+
+
+
+
